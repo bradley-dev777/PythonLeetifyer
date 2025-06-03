@@ -6,7 +6,4 @@ module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
 def test_1():
-    if module.leetify("HeLlO!")=="|-|[-|_|_()!":
-        return True
-    else:
-        return False
+    assert module.leetify("HeLlO!")=="|-|[-|_|_()!"
